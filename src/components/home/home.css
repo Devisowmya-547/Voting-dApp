@@ -1,0 +1,30 @@
+.home {
+    color: rgb(0, 23, 65);
+    font-size: 2rem;   
+}
+
+.home h1, .home p{
+    margin: 15px;
+}
+
+.home p{
+    font-weight: 800;
+}
+
+.home button{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 80%;
+    border-radius: 15px;
+    cursor: pointer;
+    background: skyblue;
+    border: none;
+    box-shadow: 0 0 10px blue, 0 0 20px blue;
+    transition: .2s;
+    font-weight: 700    ;
+    &:hover{
+        box-shadow: 0 0 10px orange, 0 0 20px orange;
+        transform: scale(1.1);
+    }
+}
