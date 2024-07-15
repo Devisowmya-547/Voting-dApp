@@ -18,7 +18,7 @@ function Register() {
   const [togglePass, setTogglePass] = useState(true)
   const [togglecPass, setTogglecPass] = useState(true)
   const navigate = useNavigate();
-  const [web3, setweb3] = useState();
+  // const [web3, setweb3] = useState();
   const [contrr, setcontrr] = useState('')
   const [acc, setacc] = useState('')
 
@@ -26,7 +26,7 @@ function Register() {
     if(window.ethereum){
       await window.ethereum.request({method:"eth_requestAccounts"})
       const web3 = new Web3(window.ethereum);
-      setweb3(web3);
+      // setweb3(web3);
       const acc = await web3.eth.getAccounts();
       setacc(acc[0])
       const contract = new web3.eth.Contract(Cont.abi, process.env.REACT_APP_CONT_ADD);
