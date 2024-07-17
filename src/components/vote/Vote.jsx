@@ -43,7 +43,7 @@ function Vote() {
         setVoted(false)
         return
       }
-    }else if(pos == 'mp'){
+    }else if(pos === 'mp'){
       if(window.confirm('Are you sure you want to vote for '+par)){
         await contrr.methods.mpVote(par).send({from : acc})
         alert('Successfully voted for '+par)
