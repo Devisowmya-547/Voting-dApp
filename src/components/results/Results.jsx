@@ -51,7 +51,7 @@ function Results() {
     if (contrr) {
       getDetails();
     }
-  },[contrr]);
+  });
 
   return (
     <div className='results'>
