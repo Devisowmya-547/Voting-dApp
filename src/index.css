@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: url('https://t4.ftcdn.net/jpg/02/85/02/57/360_F_285025714_W16ylF74Qp6CSKozmcB4lTbXGE7OfQ71.jpg') no-repeat center center fixed;
   background-size: cover;
+  backdrop-filter: blur(10px);
 }
 
 code {

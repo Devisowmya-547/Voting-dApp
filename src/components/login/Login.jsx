@@ -5,6 +5,7 @@ import { GoPersonFill } from "react-icons/go";
 import { useNavigate } from 'react-router-dom';
 import Web3 from 'web3'
 import Cont from '../../assets/Election.json'
+let Vid;
 
 function Login() {
   const[vid, setVid] = useState("")
@@ -35,7 +36,7 @@ function Login() {
 
   async function handleSubmit(e){
     e.preventDefault();
-    if(vid.length !== 10) {alert('Invalid Voter id'); return}
+    if(vid.length !== 9) {alert('Invalid Voter id'); return}
     if(pass.length < 8) {alert('Password must be atleast 8 characters'); return}
     const details = await contrr.methods.getVoterDetails(vid).call()
     if(details.password === "" ) {alert('No voter found'); return}
@@ -49,7 +50,7 @@ function Login() {
         <center>
         <div>
             <label htmlFor="vid"><GoPersonFill /></label>
-            <input type="text" value={vid} onChange={(e) => {setVid(e.target.value)}} placeholder='Voter ID' required id='vid'/>
+            <input type="text" value={vid} onChange={(e) => {setVid(e.target.value); Vid = vid}} placeholder='Voter ID' required id='vid'/>
         </div>
         <div>
             <label htmlFor="pass">{togglePass ? <IoMdEyeOff onClick={() => {setTogglePass(false)}}/> : <IoMdEye onClick={() => {setTogglePass(true)}}/>}</label>
@@ -63,4 +64,4 @@ function Login() {
   )
 }
 
-export default Login
+export {Vid, Login}

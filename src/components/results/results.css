@@ -1,0 +1,17 @@
+.results{
+    display: flex;
+    justify-content: space-around;
+}
+
+.results div{
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px blue;
+    margin: 20px;
+}
+
+.results div p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}

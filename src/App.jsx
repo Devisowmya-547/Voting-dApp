@@ -1,11 +1,12 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './components/home/Home';
-import Login from './components/login/Login';
+import {Login} from './components/login/Login';
 import Register from './components/register/Register';
 import Main from './components/main/Main';
 import Vote from './components/vote/Vote';
-import Candidate from './components/candidate/Candidate';
+import Results from './components/results/Results';
+import Profile from './components/profile/Profile';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path='/register' element={<Register />}/>
         <Route path='/home' element={<Main />}/>
         <Route path='/vote' element={<Vote />}/>
-        <Route path='/candidate' element={<Candidate />}/>
+        <Route path='/results' element={<Results />}/>
+        <Route path='/profile' element={<Profile />}/>
       </Routes>
     </Router>
   );

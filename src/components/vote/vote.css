@@ -6,6 +6,7 @@
     margin-right: 6%;
     padding: 15px;
     border-radius: 20px;
+    background: rgba(255, 255, 255, 0.322);
 }
 
 .vote h1{
@@ -26,19 +27,17 @@
     font-weight: 900;
     font-size: 1.2rem;
     letter-spacing: 2px;
-    color: white;
-    background: rgb(75, 75, 153);
+    background: rgb(253, 102, 102);
     border: none;
     box-shadow: 10px 10px 5px rgb(17, 17, 17);
     transition: .5s;
     &:hover{
-        box-shadow: 0 0 10px white, 0 0 20px white;
-        transform: scale(1.2);
+        background: rgb(0, 255, 115);
     }
 }
 
 .vote .ballet{
-    height: 500px;
+    height: 550px;
     backdrop-filter: blur(10px);
     overflow-y: scroll;
     &::-webkit-scrollbar{

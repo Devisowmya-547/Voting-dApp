@@ -46,7 +46,7 @@ function Register() {
     if(pass.length < 8) {alert('Password must be atleast 8 characters'); return}
     if(age < 18) {alert('You\'re not eligible to vote'); return}
     if(ano.length !== 12) {alert('Invalid Aadhar number'); return}
-    if(vid.length !== 10) {alert('Invalid Voter id'); return}
+    if(vid.length !== 9) {alert('Invalid Voter id'); return}
 
     try {
       await contrr.methods.addVoter(name, age, vid, ano, pass).send({from: acc})
