@@ -17,7 +17,6 @@ function App() {
         <Route path='/home' element={<Main />}/>
         <Route path='/vote' element={<Vote />}/>
         <Route path='/results' element={<Results />}/>
-        <Route path='/home' element={<Profile />}/>
       </Routes>
     </Router>
   );
