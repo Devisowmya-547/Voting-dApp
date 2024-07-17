@@ -6,7 +6,6 @@ import Register from './components/register/Register';
 import Main from './components/main/Main';
 import Vote from './components/vote/Vote';
 import Results from './components/results/Results';
-import Profile from './components/profile/Profile';
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         <Route path='/home' element={<Main />}/>
         <Route path='/vote' element={<Vote />}/>
         <Route path='/results' element={<Results />}/>
-        <Route path='/profile' element={<Profile />}/>
+        <Route path='/home' element={<Profile />}/>
       </Routes>
     </Router>
   );
